@@ -1,0 +1,12 @@
+<form class="" action="/students" method="post">
+  <input type="text" name="student[nombre]" value="<%=@student.nombre%>">
+  <button type="submit">Editar</button>
+</form>
+
+<%= form_for @student do |f| %>
+  First name: <%= f.text_field :nombre %><br />
+  Last name : <%= f.text_field :apellido %><br />
+  Age : <%= f.number_field :edad %><br />
+  Email    : <%= f.text_field :correo %><br />
+  <%= f.submit %>
+<% end %>

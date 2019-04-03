@@ -1,0 +1,7 @@
+<h1>Listado de estudiantes</h1>
+<a href="/students/new">Crea un Nuevo estudiante</a>
+<ul>
+  <%  @students.each do |student| %>
+    <li><%= student.nombre%>  <a href="/students/<%=student.id%>/edit">Editar</a></li>
+  <% end %>
+</ul>

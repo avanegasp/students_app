@@ -1,0 +1,5 @@
+<form class="" action="/students/<%=@student.id%>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <input type="text" name="student[nombre]" value="<%=@student.nombre%>">
+  <button type="submit">Editar</button>
+</form>
